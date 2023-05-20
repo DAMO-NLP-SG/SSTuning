@@ -1,15 +1,13 @@
 # SSTuning
 Code for ACL paper "Zero-Shot Text Classification via Self-Supervised Tuning"
 
-# Zero-shot text classification (base-sized model) trained with self-supervised tuning
+# Zero-shot text classification trained with self-supervised tuning
 
 Zero-shot text classification model trained with self-supervised tuning (SSTuning). 
 It was introduced in the paper Zero-Shot Text Classification via Self-Supervised Tuning by 
 Chaoqun Liu, Wenxuan Zhang, Guizhen Chen, Xiaobao Wu, Anh Tuan Luu, Chip Hong Chang, Lidong Bing
 
 and first released in [this repository](https://github.com/DAMO-NLP-SG/SSTuning).
-
-The model backbone is RoBERTa-base.
 
 ## Model description
 The model is tuned with unlabeled data using a learning objective called first sentence prediction (FSP). 
