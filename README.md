@@ -1,19 +1,14 @@
-# SSTuning
-Code for ACL paper "Zero-Shot Text Classification via Self-Supervised Tuning"
-
 # Zero-shot text classification trained with self-supervised tuning
-
-Zero-shot text classification model trained with self-supervised tuning (SSTuning). 
-It was introduced in the paper Zero-Shot Text Classification via Self-Supervised Tuning by 
-Chaoqun Liu, Wenxuan Zhang, Guizhen Chen, Xiaobao Wu, Anh Tuan Luu, Chip Hong Chang, Lidong Bing.
+This repository contains the code and pre-trained models for for ACL paper "Zero-Shot Text Classification via Self-Supervised Tuning".
 
 ## Model description
 The model is tuned with unlabeled data using a learning objective called first sentence prediction (FSP). 
 The FSP task is designed by considering both the nature of the unlabeled corpus and the input/output format of classification tasks. 
 The training and validation sets are constructed from the unlabeled corpus using FSP. 
 
-During tuning, BERT-like pre-trained masked language 
-models such as RoBERTa and ALBERT are employed as the backbone, and an output layer for classification is added. 
+![](./figures/SSTuning.png)
+
+During tuning, BERT-like pre-trained masked language models such as RoBERTa and ALBERT are employed as the backbone, and an output layer for classification is added. 
 The learning objective for FSP is to predict the index of the correct label. 
 A cross-entropy loss is used for tuning the model.
 
