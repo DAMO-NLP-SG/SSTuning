@@ -29,7 +29,7 @@ The model can be used for zero-shot text classification such as sentiment analys
 
 The number of labels should be 2 ~ 20. 
 
-### How to use
+### Inference
 You can try the model with the Colab [Notebook](https://colab.research.google.com/drive/17bqc8cXFF-wDmZ0o8j7sbrQB9Cq7Gowr?usp=sharing).
 
 ```python
@@ -63,6 +63,8 @@ print(probs)
 print(predictions)
 ```
 
+### Training
+To be updated soon.
 
 ### BibTeX entry and citation info
 ```bibtxt
