@@ -1,5 +1,5 @@
 # Zero-Shot Text Classification via Self-Supervised Tuning
-This repository contains the code and pre-trained models for for ACL 2023 paper "Zero-Shot Text Classification via Self-Supervised Tuning".
+This repository contains the code and pre-trained models for the paper "Zero-Shot Text Classification via Self-Supervised Tuning", which was accepted to Findings of ACL 2023.
 
 ## Model description
 The model is tuned with unlabeled data using a learning objective called first sentence prediction (FSP). 
