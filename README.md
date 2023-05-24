@@ -29,7 +29,7 @@ The model can be used for zero-shot text classification such as sentiment analys
 
 The number of labels should be 2 ~ 20. 
 
-### Inference
+## Quick start for inference
 You can try the model with the Colab [Notebook](https://colab.research.google.com/drive/17bqc8cXFF-wDmZ0o8j7sbrQB9Cq7Gowr?usp=sharing).
 
 ```python
@@ -63,10 +63,27 @@ print(probs)
 print(predictions)
 ```
 
-### Training
-To be updated soon.
+## Training
+There are two steps for self-supervised tuning: 
+1. training data generation from Wikipedia and Amazon Product Review dataset
+2. Self-supervised Tuning
 
-### BibTeX entry and citation info
+### Training data generation
+Please refer to [README](./data_training/README.md) for details.
+
+### Self-supervised Tuning
+```
+source 01_tuning.sh
+```
+
+### Evaluation
+1. Put the datasets the folder ./data_testing and modify ./data_testing/label_dict_classification.json (Please refer to sst2 and agnews dataset, which has already been put in the folder for reference)
+2. 
+```
+source 02_evaluate.sh
+```
+
+## BibTeX entry and citation info
 ```bibtxt
 @inproceedings{acl23/SSTuning,
   author    = {Chaoqun Liu and
@@ -79,6 +96,6 @@ To be updated soon.
   title     = {Zero-Shot Text Classification via Self-Supervised Tuning},
   booktitle = {Findings of the 2023 ACL},
   year      = {2023},
-  url       = {},
+  url       = {https://arxiv.org/abs/2305.11442},
 }
 ```
