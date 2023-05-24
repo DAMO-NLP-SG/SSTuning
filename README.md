@@ -64,13 +64,15 @@ print(predictions)
 ```
 
 ## Training
+### Enviroment Preparation
+```
+conda env create -f environment.yml
+conda activate SSTuning
+```
+
 There are two steps for self-supervised tuning: 
 1. training data generation from Wikipedia and Amazon Product Review dataset
 2. Self-supervised Tuning
-
-### Enviroment Preparation
-conda env create -f environment.yml
-conda activate SSTuning
 
 ### Training data generation
 Please refer to [README](./data_training/README.md) for details.
