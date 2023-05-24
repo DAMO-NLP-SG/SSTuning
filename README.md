@@ -68,6 +68,10 @@ There are two steps for self-supervised tuning:
 1. training data generation from Wikipedia and Amazon Product Review dataset
 2. Self-supervised Tuning
 
+### Enviroment Preparation
+conda env create -f environment.yml
+conda activate SSTuning
+
 ### Training data generation
 Please refer to [README](./data_training/README.md) for details.
 
@@ -78,7 +82,7 @@ source 01_tuning.sh
 
 ### Evaluation
 1. Put the datasets the folder ./data_testing and modify ./data_testing/label_dict_classification.json (Please refer to sst2 and agnews dataset, which has already been put in the folder for reference)
-2. 
+2. modify 02_evaluate.sh accordingly and run
 ```
 source 02_evaluate.sh
 ```
