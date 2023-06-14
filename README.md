@@ -24,9 +24,9 @@ There are three versions of models released. The details are:
 Please note that zero-shot-classify-SSTuning-base is trained with more data (20.48M) than the paper, as this will increase the accuracy.
 
 ## Performance
-### Main results in the paper
+<!-- ### Main results in the paper
 
-![](./figures/main_results.png)
+![](./figures/main_results.png) -->
 
 ### Performance of the released models
 
@@ -36,9 +36,9 @@ Please note that zero-shot-classify-SSTuning-base is trained with more data (20.
 | [SSTuning-large](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-large)  | 62.5         | 84.8    | 86.6            | 55.0               | 90.5 | 92.1 | 95.9 | 87.7   | 95.5   | 48.6 | 79.9    |
 | [SSTuning-ALBERT](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-ALBERT) | 64.5         | 86.0    | 93.7            | 62.7               | 90.8 | 93.5 | 95.8 | 88.8   | 95.6   | 44.3 | 81.6    |
 
-### Compare with ChatGPT (additional results, not in the paper)
+### Compare with ChatGPT (gpt-3.5-turbo-0613)
 
-We sample up to 1000 samples from each of the evaluation datasets and use the released models to do the evaluation.
+We sample up to 1000 samples from each of the evaluation datasets and use the released models to do the evaluation. The sampled data is [here](https://huggingface.co/datasets/DAMO-NLP-SG/SSTuning-datasets/tree/main).
 
 | Model                              | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
 | ---------------------------------- | --- | ----| --- | ----| ---- | --- | -- | ---| ------ | ----- | ------ |
