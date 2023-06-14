@@ -28,7 +28,7 @@ Please note that zero-shot-classify-SSTuning-base is trained with more data (20.
 
 ![](./figures/main_results.png) -->
 
-### Performance of the released models
+### Performance of the released models (accuracy)
 
 | Model                              | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
 | ---------------------------------- | ------------ | ------- | --------------- | ------------------ | ---- | ---- | ---- | ------ | ------ | ---- | ------- |
