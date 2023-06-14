@@ -49,9 +49,9 @@ We sample up to 1000 samples from each of the evaluation datasets and use the re
 
 As the output of ChatGPT may not fall within the pre-degined label space, we report hit rate (percentage of the outputs falling into the label space).
 
-|                               | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
-| ---------------------------------- | --- | ----| --- | ----| ---- | --- | -- | ---| ------ | ----- | ------ |
-| ChatGPT Output hit rate            | 95.3         | 96.6    | 99.8            | 90.8               | 99.8  | 100| 100| 99.8   | 100 | 100 |         |
+|                             | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | 
+| ----------------------------| --- | ----| --- | ----| ---- | --- | -- | ---| ------ | ----- | 
+| Output hit rate   | 95.3    | 96.6    | 99.8    | 90.8      | 99.8  | 100| 100| 99.8   | 100 | 100 |       
 
 ## Intended uses & limitations
 The model can be used for zero-shot text classification such as sentiment analysis and topic classification. No further finetuning is needed.
