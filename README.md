@@ -23,6 +23,29 @@ There are three versions of models released. The details are:
 
 Please note that zero-shot-classify-SSTuning-base is trained with more data (20.48M) than the paper, as this will increase the accuracy.
 
+## Performance
+* Main results on 4 topic classification datasets and 6 sentiment analysis datasets. (5 seeds, as shown in the paper)
+
+![](./figures/main_results.png)
+
+* We also test the performance of the released models. 
+| Model                              | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
+| ---------------------------------- | ------------ | ------- | --------------- | ------------------ | ---- | ---- | ---- | ------ | ------ | ---- | ------- |
+| zero-shot-classify-SSTuning-base   | 59.8         | 83.1    | 84.7            | 50.2               | 87.3 | 90.0 | 93.6 | 85.4   | 94.9   | 42.7 | 77.2    |
+| zero-shot-classify-SSTuning-large  | 62.5         | 84.8    | 86.6            | 55.0               | 90.5 | 92.1 | 95.9 | 87.7   | 95.5   | 48.6 | 79.9    |
+| zero-shot-classify-SSTuning-ALBERT | 64.5         | 86.0    | 93.7            | 62.7               | 90.8 | 93.5 | 95.8 | 88.8   | 95.6   | 44.3 | 81.6    |
+
+* Compare with ChatGPT (additional results, not in the paper)
+We sample up to 1000 samples from each of the evaluation datasets and use the released models to do the evaluation.
+
+| Model                              | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
+| ---------------------------------- | --- | ----| --- | ----| ---- | --- | -- | ---| ------ | ----- | ------ |
+| zero-shot-classify-SSTuning-base   | 60.5         | 84.1    | 84.7            | 51.5               | 87.27 | 90.2  | 95.2  | 85.37  | 95     | 43.4  | 77.7    |
+| zero-shot-classify-SSTuning-large  | 61.4         | 84.7    | 88.3            | 55.7               | 90.5  | 93.2  | 96.7  | 87.7   | 95.9   | **48.9**  | 80.3    |
+| zero-shot-classify-SSTuning-ALBERT | **63.2**     | **85.6** | 93.7           | **64.4**          | 90.8  | **94.2**  | 96.0  | 88.8   | 96.2   | 44.0  | **81.7**    |
+| ChatGPT                            | 61.9         | 82.5    | 95.1            | 54.3               | 93.7  | 93.7  | 98.1  | 90.0   | 96.5   | 47.5  | 81.3    |
+| ChatGPT (with post-processing)     | 62.1         | 82.5    | **95.1**        | 55.0               | **93.7**  | 93.7  | **98.1**  | **90.0**   | **96.5**  | 47.5  | 81.4    |
+| ChatGPT Output hit rate            | 95.3         | 96.6    | 99.8            | 90.8               | 99.8  | 100.0 | 100.0 | 99.8   | 100.0  | 100.0 |         |
 
 ## Intended uses & limitations
 The model can be used for zero-shot text classification such as sentiment analysis and topic classification. No further finetuning is needed.
