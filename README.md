@@ -24,7 +24,7 @@ There are three versions of models released. The details are:
 Please note that zero-shot-classify-SSTuning-base is trained with more data (20.48M) than the paper, as this will increase the accuracy.
 
 ## Performance
-### Main results on 4 topic classification datasets and 6 sentiment analysis datasets. (5 seeds, as shown in the paper)
+### Main results on 4 topic classification datasets and 6 sentiment analysis datasets.
 
 ![](./figures/main_results.png)
 
@@ -121,7 +121,7 @@ source 01_tuning.sh
 ```
 
 ### Evaluation
-1. Put the datasets the folder ./data_testing and modify ./data_testing/label_dict_classification.json (Please refer to sst2 and agnews dataset, which has already been put in the folder for reference)
+1. Put the datasets the folder ./data_testing and modify ./data_testing/label_dict_classification.json (Please refer to [README](./data_testing/README.md) for details.)
 2. modify 02_evaluate.sh accordingly and run
 ```
 source 02_evaluate.sh
