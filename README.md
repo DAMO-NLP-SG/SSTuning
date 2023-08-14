@@ -32,14 +32,21 @@ Please note that zero-shot-classify-SSTuning-XLM-R is trained with 20.48M Englis
 
 ![](./figures/main_results.png) -->
 
-### Performance of the released models (accuracy)
+### Performance of the released models for English (accuracy)
 
 | Model                              | yah | agn | dbp | 20n | sst2  | imd  | ylp  | mr | amz | sst5  | Avg |
 | ---------------------------------- | ------------ | ------- | --------------- | ------------------ | ---- | ---- | ---- | ------ | ------ | ---- | ------- |
 | [SSTuning-base](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-base)   | 59.8         | 83.1    | 84.7            | 50.2               | 87.3 | 90.0 | 93.6 | 85.4   | 94.9   | 42.7 | 77.2    |
-| [SSTuning-large](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-large)  | 62.5         | 84.8    | 86.6            | 55.0               | 90.5 | 92.1 | 95.9 | 87.7   | 95.5   | 48.6 | 79.9    |
-| [SSTuning-ALBERT](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-ALBERT) | 64.5         | 86.0    | 93.7            | 62.7               | 90.8 | 93.5 | 95.8 | 88.8   | 95.6   | 44.3 | 81.6    |
+| [SSTuning-large](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-large)  | 62.5         | 84.8    | 86.6            | 55.0               | 90.5 | 92.1 | 95.9 | 87.7   | 95.5   | **48.6** | 79.9    |
+| [SSTuning-ALBERT](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-ALBERT) | **64.5**         | **86.0**    | **93.7**   | **62.7**     | **90.8** | **93.5** | **95.8** | **88.8**   | **95.6**   | 44.3 | **81.6**    |
 | [SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R)   | 57.9 | 77.3 | 71.3 | 45.1 | 76.3 | 79.7 | 93.0 | 73.1 | 92.4 | 33.8 | 70.0 |
+
+### Performance of the released model for Multiligual (accuracy)
+The test datasets are constructed from [amazon_reviews_multi](https://huggingface.co/datasets/amazon_reviews_multi) for binary sentiment classification. We map samples of star 1 or 2 as negative, and star 4 or 5 as positive.
+
+| Model                             | en   | zh   | de   | es   | fr   | ja   | average |
+|-----------------------------------|------|------|------|------|------|------|---------|
+| zero-shot-classify-SSTuning-XLM-R | 91.6 | 83.7 | 89.3 | 85.6 | 86.6 | 88.0 |   87.4  |
 
 ### Compare with ChatGPT (gpt-3.5-turbo-0613)
 
