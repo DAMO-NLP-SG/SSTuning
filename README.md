@@ -2,7 +2,7 @@
 This repository contains the code and pre-trained models for the paper "[Zero-Shot Text Classification via Self-Supervised Tuning](https://arxiv.org/abs/2305.11442)", which was accepted to Findings of ACL 2023.
 
 ## News
-[2023/8/14] 
+[2023/8/14] We release a multilingual model for zero-shot text classification, which is [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R).
 
 ## Model description
 The model is tuned with unlabeled data using a learning objective called first sentence prediction (FSP). 
@@ -46,7 +46,7 @@ The test datasets are constructed from [amazon_reviews_multi](https://huggingfac
 
 | Model                             | en   | zh   | de   | es   | fr   | ja   | average |
 |-----------------------------------|------|------|------|------|------|------|---------|
-| zero-shot-classify-SSTuning-XLM-R | 91.6 | 83.7 | 89.3 | 85.6 | 86.6 | 88.0 |   87.4  |
+| [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R)   | 91.6 | 83.7 | 89.3 | 85.6 | 86.6 | 88.0 |   87.4  |
 
 ### Compare with ChatGPT (gpt-3.5-turbo-0613)
 
