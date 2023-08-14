@@ -3,6 +3,7 @@ This repository contains the code and pre-trained models for the paper "[Zero-Sh
 
 ## News
 [2023/8/14] We release a multilingual model for zero-shot text classification, which is [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R).
+
 [2023/5/12] Initial release of the models.
 
 ## Model description
