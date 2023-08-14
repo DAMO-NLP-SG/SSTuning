@@ -3,6 +3,7 @@ This repository contains the code and pre-trained models for the paper "[Zero-Sh
 
 ## News
 [2023/8/14] We release a multilingual model for zero-shot text classification, which is [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R).
+[2023/5/12] Initial release of the models.
 
 ## Model description
 The model is tuned with unlabeled data using a learning objective called first sentence prediction (FSP). 
@@ -44,7 +45,7 @@ Please note that zero-shot-classify-SSTuning-XLM-R is trained with 20.48M Englis
 ### Performance of the released model for Multiligual (accuracy)
 The test datasets are constructed from [amazon_reviews_multi](https://huggingface.co/datasets/amazon_reviews_multi) for binary sentiment classification. We map samples of star 1 or 2 as negative, and star 4 or 5 as positive.
 
-| Model                             | en   | zh   | de   | es   | fr   | ja   | average |
+| Model                             | en   | zh   | de   | es   | fr   | ja   | Avg |
 |-----------------------------------|------|------|------|------|------|------|---------|
 | [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R)   | 91.6 | 83.7 | 89.3 | 85.6 | 86.6 | 88.0 |   87.4  |
 
