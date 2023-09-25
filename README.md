@@ -2,6 +2,8 @@
 This repository contains the code and pre-trained models for the paper "[Zero-Shot Text Classification via Self-Supervised Tuning](https://arxiv.org/abs/2305.11442)", which was accepted to Findings of ACL 2023.
 
 ## News
+[2023/9/25] [zero-shot-classify-SSTuning-base](https://modelscope.cn/models/damo/zero-shot-classify-SSTuning-base/summary) and [zero-shot-classify-SSTuning-XLM-R](https://modelscope.cn/models/damo/zero-shot-classify-SSTuning-XLM-R/summary) are available on ModelScope. 
+
 [2023/8/14] We release a multilingual model for zero-shot text classification, which is [zero-shot-classify-SSTuning-XLM-R](https://huggingface.co/DAMO-NLP-SG/zero-shot-classify-SSTuning-XLM-R).
 
 [2023/5/12] Initial release of the models.
